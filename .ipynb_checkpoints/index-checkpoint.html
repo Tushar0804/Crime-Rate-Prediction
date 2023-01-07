@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Rate Prediction</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+    </style>
+
+</head>
+
+<body onload="init()">
+
+    <header>
+        <h1 class = "title">Crime Rate Predictor</h1>
+        <h2 class = "tagline">Unlock safety: Reduce crime rate together</h2>
+    </header>
+
+    <section>
+        <form id="frm" action="/predict" method="POST">
+            <table class="table1">
+                <tr>
+                    <td class="label">
+                        <label>Select City Name</label>
+                    </td>
+                    <td class="sel">
+                        <select class="citynm" name="city">
+                            <option value="0">Ahmedabad</option>
+                            <option value="1">Bengaluru</option>
+                            <option value="2">Chennai</option>
+                            <option value="3">Coimbatore</option>
+                            <option value="4">Delhi</option>
+                            <option value="5">Ghaziabad</option>
+                            <option value="6">Hyderabad</option>
+                            <option value="7">Indore</option>
+                            <option value="8">Jaipur</option>
+                            <option value="9">Kanpur</option>
+                            <option value="10">Kochi</option>
+                            <option value="11">Kolkata</option>
+                            <option value="12">Kozhikode</option>
+                            <option value="13">Lucknow</option>
+                            <option value="14">Mumbai</option>
+                            <option value="15">Nagpur</option>
+                            <option value="16">Patna</option>
+                            <option value="17">Pune</option>
+                            <option value="18">Surat</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label>Select Crime Type</label>
+                    </td>
+                    <td class="sel">
+                        <select name="crime">
+                            <option value="Robbery">Robbery</option>
+                            <option value="Assault">Assault</option>
+                            <option value="Burglary">Burglary</option>
+                            <option value="Theft">Theft</option>
+                            <option value="Fraud">Fraud</option>
+                            <option value="Drugs">Drugs</option>
+                            <option value="Homicide">Homicide</option>
+                            <option value="Kidnapping">Kidnapping</option>
+                            <option value="Vandalism">Vandalism</option>
+                            <option value="Arson">Arson</option>
+                        </select>
+                    </td>                  
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label>Select Year</label>
+                    </td>
+                    <td class="sel" >
+                        <select id="year-dropdown"></select>
+                    </td> 
+                </tr>
+            </table>
+         </form>
+
+         <div class="button" >
+            <button form="frm" type="button" class="btn" id="predict_button">Predict</button>
+         </div>         
+    </section>
+    
+    <section class="prediction">
+        <table class="table2" id="res">
+            <tr>
+                <td class="r1" id="prediction_heading"></td>
+                <td class="r2" id="crime_status"></td>
+            </tr>
+            <tr>
+                <td class="r1" id="crime_rate_heading"></td>
+                <td class="r2" id="crime_rate"></td>
+            </tr>
+            <tr>
+                <td class="r1" id="cases_heading"></td>
+                <td class="r2" id="cases"></td>
+            </tr>
+            <tr>
+                <td class="r1" id="population_heading"></td>
+                <td class="r2" id="population"></td>
+            </tr>
+        </table>
+    </section>
+
+
+    <section>
+        <h2 id="about">About the Application</h2>
+
+        <p id="introduction">Digit Recognition is a process that converts scanned 
+            documents images into electronically understandable form. Thus, enabling
+            computers to recognize text present in the images. This is a Deep Learning
+            Project based on Convolutional Neural Networks Sequential model.
+            <br> <br>
+            The Handwritten MNIST dataset (Modified National Institute of Standards and
+            Technology) has been loaded using tensorflow keras API for training and 
+            testing of the model. This is a dataset of 60,000 28x28 grayscale images
+            of the 10 digits, along with a test set of 10,000 images.
+            <br><br>
+            It is a 8 layer model with Conv2d, MaxPool2d, Droupout, Flatten and Dense
+            layer combination. Input layer has 32 neurons and the output layer has 10
+            neurons with 10 different classes. 15 epochs are used. 'sparse_categorical_
+            crossentropy' is loss function and 'adam' is used for optimization. Model
+            gives an accurancy of 99.21% on testing dataset.
+            <br><br>
+        </p>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div id="developer">
+                <h3 >Developed By: &emsp; Tushar Sharma</h3>
+            </div>
+            <div id="linkedin">
+                <a href="https://www.linkedin.com/in/tushar-sharma-2001/" target="_blank">
+                    <img src="images/linkedin.png" alt="linkedIn" width="35" >                
+                </a>  
+            </div>
+            <div id="github">
+                <a href="https://github.com/Tushar0804" target="_blank">
+                    <img src="images/github.png" alt="GitHub" width="35">
+                </a>
+            </div>
+        </div>       
+    </footer>
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            //Reference the DropDownList.
+            var year = document.getElementById("year-dropdown");
+     
+            //Loop and add the Year values to DropDownList.
+            for (var i = 2000; i <= 2050; i++) {
+                var option = document.createElement("OPTION");
+                option.innerHTML = i;
+                option.value = i;
+                year.appendChild(option);
+            }
+        };
+    </script>
+    <!-- <script src="js/main.js"></script> -->
+    
+</body>
+</html>
