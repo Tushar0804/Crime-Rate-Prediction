@@ -3,6 +3,8 @@
 
 Crime Rate Predictor is an application that uses machine learning techniques to predict crime rates in 19 Indian metropolitan cities. The goal of this project is to assist law enforcement agencies in understanding crime patterns and allocating resources effectively to reduce crime rates and improve public safety.
 
+The Application has been deployed at the following URL: http://tushars008.pythonanywhere.com
+
 ## About the Application
 
 Crime rate prediction has become an important tool for law enforcement agencies to help them better understand patterns of crime and anticipate where crime is likely to occur. By predicting future crime trends, law enforcement agencies can better allocate resources to areas that are likely to experience increases in criminal activity. This could lead to a decrease in crime overall, as well as an increase in public safety. Additionally, crime rate prediction can help police departments develop better strategies for responding to crime as it happens.
@@ -24,12 +26,12 @@ The system uses scikit-learn's Random Forest Regression model, which takes year,
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/your-username/crime-rate-predictor.git
+   git clone https://github.com/Tushar0804/Crime-Rate-Prediction.git
 
 2. Navigate to the project directory:
 
    ```shell
-   cd crime-rate-predictor
+   cd Crime-Rate-Prediction
 
 3. Install the required dependencies:
 
