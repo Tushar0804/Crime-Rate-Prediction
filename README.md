@@ -11,6 +11,14 @@ The dataset is prepared manually based on the publication available on the India
 
 The system uses scikit-learn's Random Forest Regression model, which takes year, city name, and crime type data as inputs. Random Forest Regression is a type of an ensemble learning techniques that can be used to predict continuous values from a collection of data. It works by creating a large number of "decision trees" which each make a prediction about the target variable. Then it averages all the predictions to come up with a final prediction. This makes it more accurate than a single decision tree. The model predicts the crime rate with an accuracy of 93.20% on the testing dataset.
 
+## Features
+
+- Crime rate prediction for 10 different categories of crime
+- Prediction for 19 Indian metropolitan cities
+- Historical crime data from 2014 to 2021
+- Random Forest Regression model for accurate predictions
+- Model accuracy of 93.20% on testing dataset
+
 ## Installation
 
 1. Clone the repository:
