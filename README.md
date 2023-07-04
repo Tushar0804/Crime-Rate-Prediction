@@ -1,6 +1,5 @@
 # Crime Rate Predictor - Unlock Safety: Reduce Crime Rate Together
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Crime Rate Predictor is an application that uses machine learning techniques to predict crime rates in 19 Indian metropolitan cities. The goal of this project is to assist law enforcement agencies in understanding crime patterns and allocating resources effectively to reduce crime rates and improve public safety.
 
@@ -33,5 +32,29 @@ The system uses scikit-learn's Random Forest Regression model, which takes year,
 
    ```shell
    python crime_rate_predictor.py
+
+
+## Usage
+
+- Launch the application by running `crime_rate_predictor.py`.
+- Select the desired city, crime type, and year for which you want to predict the crime rate.
+- Click on the "Predict" button to generate the crime rate prediction.
+- The predicted crime rate will be displayed on the screen.
+
+## Contributing
+
+Contributions are welcome! If you want to contribute to this project, please follow these steps:
+
+- Fork the repository.
+- Create a new branch for your feature or bug fix.
+- Make the necessary changes and commit them.
+- Submit a pull request, clearly explaining the changes you made.
+
+Please ensure that your contributions adhere to the project's coding conventions and are accompanied by appropriate tests.
+
+## Contact
+
+If you have any questions, suggestions, or issues regarding this project, please feel free to [contact me](mailto:tusharsharma0804@gmail.com).
+
 
 
