@@ -41,12 +41,12 @@ The system uses scikit-learn's Random Forest Regression model, which takes year,
 4. Run the application:
 
    ```shell
-   python crime_rate_predictor.py
+   python app.py
 
 
 ## Usage
 
-- Launch the application by running `crime_rate_predictor.py`.
+- Launch the application by running `app.py`.
 - Select the desired city, crime type, and year for which you want to predict the crime rate.
 - Click on the "Predict" button to generate the crime rate prediction.
 - The predicted crime rate will be displayed on the screen.
